@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/PrimeraPractica.iml" filepath="$PROJECT_DIR$/PrimeraPractica.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/thebestapp.iml" filepath="$PROJECT_DIR$/.idea/modules/thebestapp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/thebestapp_main.iml" filepath="$PROJECT_DIR$/.idea/modules/thebestapp_main.iml" group="thebestapp" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/thebestapp_test.iml" filepath="$PROJECT_DIR$/.idea/modules/thebestapp_test.iml" group="thebestapp" />
     </modules>
   </component>
 </project>
