@@ -61,7 +61,8 @@ public class Main {
                 System.out.println("\tThis is the form #"+(i+1)+"\n");
                 Elements inputlist = elementForms.get(i).getElementsByTag("input");
                 for (int j = 0; j < inputlist.size(); j++) {
-                    System.out.println("\t\tThis is the input#"+(j+1)+" of the form #"+(i+1));
+                    System.out.println("\t\tThis is the input#"+(j+1)+" of the form #" +
+                            ""+(i+1));
                     List AttrList = inputlist.get(j).attributes().asList();
                     System.out.println("\t\t\tElement Attributes:");
                     for (int k = 0; k < AttrList.size(); k++) {
