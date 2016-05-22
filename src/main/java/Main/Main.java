@@ -5,6 +5,7 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.select.Elements;
 import java.io.IOException;
+import java.util.List;
 import java.util.Scanner;
 
 /**
@@ -54,6 +55,24 @@ public class Main {
             System.out.println("This is the Paragraph Count: "+ elementParagraph.size());
             System.out.println("This is the Images Count: "+ elementIMG.size());
             System.out.println("This is the Form Count: "+ elementForms.size());
+            System.out.println();
+            System.out.println("\tProcesing forms....\n");
+            for (int i = 0; i < elementForms.size(); i++) {
+                System.out.println("\tThis is the form #"+(i+1)+"\n");
+                Elements inputlist = elementForms.get(i).getElementsByTag("input");
+                for (int j = 0; j < inputlist.size(); j++) {
+                    System.out.println("\t\tThis is the input#"+(j+1)+" of the form #"+(i+1));
+                    List AttrList = inputlist.get(j).attributes().asList();
+                    System.out.println("\t\t\tElement Attributes:");
+                    for (int k = 0; k < AttrList.size(); k++) {
+                        System.out.println("\t\t\t\t" + AttrList.get(k));
+                    }
+
+
+
+                }
+
+            }
             //System.out.println(docu.html());
 
         }
